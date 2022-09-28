@@ -1,0 +1,127 @@
+* {
+  text-align: center;
+}
+
+p {
+  font-size: clamp(.4em, 4vw, 1.1em);
+}
+
+/* MAIN CONTAINER */
+
+.main_container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 3em 1em;
+  border-radius: 1em;
+  background-color: #242424;
+  box-shadow: 0px 8px 10px 4px #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TITLE CONTAINER */
+
+.title_container {
+  margin: 2.3em 0;
+}
+
+.title_container h2 {
+  color: #378237;
+  font-size: clamp(1.3em, 6vw, 2.1em);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* SCORE CONTAINER */
+
+.score_container p span,
+.game_info_container p span {
+  color: #378237;
+  font-weight: 700;
+}
+
+.score_container p span {
+  font-size: 1.2em;
+}
+
+/* GAME INFO CONTAINER */
+
+.game_info_container p {
+  margin-bottom: .3em;
+}
+
+.game_info_container p:last-of-type span {
+  color: #bc2d2d;
+  font-weight: 700;
+}
+
+/* PRINT WORD CONTAINER */
+
+.print_word_container {
+  margin: 3em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.print_box,
+.print_empty_box,
+.letter_input_box input {
+  width: clamp(38px, 9.6vw, 43.5px);
+  height: clamp(38px, 9.6vw, 43.5px);
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 800;
+  padding: .8em;
+  margin: 1.5px;
+  background-color: #696969;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LETTER INPUT CONTAINER */
+
+.letter_input_container button {
+  color: #bcbcbc;
+  background-color: #378237;
+  font-size: 1.150em;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: .4em 1em;
+  margin-left: .5em;
+  border: none;
+  border-radius: .6em;
+  display: block;
+  cursor: pointer;
+}
+
+.letter_input_container button:active {
+  background-color: #235023;
+}
+
+.letter_input_container .wrong_letters {
+  color: #bc2d2d;
+  font-weight: 800;
+}
+
+.letter_input_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .8em 0 1.2em;
+}
+
+.letter_input_box input {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0;
+  border: none;
+  outline: none;
+}
