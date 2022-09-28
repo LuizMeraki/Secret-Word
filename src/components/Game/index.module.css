@@ -69,7 +69,6 @@ p {
 }
 
 .print_box,
-.print_empty_box,
 .letter_input_box input {
   width: clamp(38px, 9.6vw, 43.5px);
   height: clamp(38px, 9.6vw, 43.5px);

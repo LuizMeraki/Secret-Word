@@ -16,7 +16,9 @@ const Game = ({
 
   // Data
   const renderEndGame = setRenderComponent;
-  const audioElement = useRef();
+
+  const letterInputElementRef = useRef();
+  const audioElementRef = useRef();
 
   const currentCategory = currentCategoryValue;
   const splitedCurrentWord = splitedCurrentWordValue;
@@ -52,8 +54,10 @@ const Game = ({
 
 
   const playHitSoundEffect = () => {
-    audioElement.current.volume = 0.08;
-    audioElement.current.play()
+    const audioElement = audioElementRef.current;
+
+    audioElement.volume = 0.08;
+    audioElement.play();
   }
 
 
@@ -69,22 +73,19 @@ const Game = ({
   }
 
 
-  const clearInput = () => {
-    const inputTarget = document.querySelector(".user-letter");
-    inputTarget.value = "";
-  }
-
-
   const handleUserLetter = () => {
-    let getInputValue = document.querySelector(".user-letter").value;
-    getInputValue = getInputValue.toUpperCase();
+    const letterInputElement = letterInputElementRef.current;
+    const inputValue = letterInputElement.value.toUpperCase();
 
-    if (getInputValue) {
-      setUserLetter(getInputValue);
-      clearInput();
+    if (inputValue) {
+      setUserLetter(inputValue);
+      letterInputElement.value = "";
     } else {
       alert("Digite ao menos uma letra.")
     }
+
+    // Keep input in focus
+    letterInputElement.focus();
   }
 
 
@@ -135,7 +136,7 @@ const Game = ({
             <div key={index} className={styles.print_box}>
               <span>{letter}</span>
             </div>
-          ) : (<div key={index} className={styles.print_empty_box}></div>)
+          ) : (<div key={index} className={styles.print_box}></div>)
         ))}
       </div>
       <div className={styles.letter_input_container}>
@@ -148,6 +149,7 @@ const Game = ({
             maxLength="1"
             minLength="1"
             required
+            ref={letterInputElementRef}
             onKeyUp={(e) => (e.key === "Enter") && handleUserLetter()}
           />
           <button onClick={handleUserLetter}>Jogar</button>
@@ -157,7 +159,7 @@ const Game = ({
             ` ${letter}, `
           ))}</span></p>
       </div>
-      <audio src={HitSoundEffect} ref={audioElement}></audio>
+      <audio src={HitSoundEffect} ref={audioElementRef}></audio>
     </div>
   );
 }
