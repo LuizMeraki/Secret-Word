@@ -18,7 +18,7 @@
 ## Sobre
 
 <p>Este projeto foi criado para fins didáticos, com a finalidade de por em prática os conceitos que estudei sobre React</p>
-<p>Este projeto é de um jogo de adivinhar palavras, como um jogo da forca. Este projeto foi iterresante para por em prática os conceitos aprendidos em React e para aprimorar minha lógoca.</p>
+<p>Este projeto é de um jogo de adivinhar palavras, como um jogo da forca. Este projeto foi iterresante para por em prática os conceitos aprendidos em React e para aprimorar minha lógica.</p>
 
 ### Entre no site do Secret Word
 
