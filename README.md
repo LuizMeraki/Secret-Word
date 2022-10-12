@@ -2,7 +2,7 @@
 
 <br>
 
-![gelateria](https://user-images.githubusercontent.com/75648386/195440901-a20fe05f-c666-430e-8c4d-3ad5fb539912.gif)
+![joggo](https://user-images.githubusercontent.com/75648386/195444802-8b267cb8-c63e-4f51-a84d-cb774dab9850.gif)
 
 <br>
 
@@ -18,7 +18,7 @@
 ## Sobre
 
 <p>Este projeto foi criado para fins didáticos, com a finalidade de por em prática os conceitos que estudei sobre React</p>
-<p>Este projeto é de um jogo de adivinhar palavras, como um jogoda forca. Este projeto foi iterresante para por em prática minha lógica de porogramação e aprimorar minha forma de pensar.</p>
+<p>Este projeto é de um jogo de adivinhar palavras, como um jogo da forca. Este projeto foi iterresante para por em prática os conceitos aprendidos em React e para aprimorar minha lógoca.</p>
 
 ### Entre no site do Secret Word
 
@@ -43,9 +43,9 @@ Link: <a href="https://secret-word-luizmeraki.vercel.app/" target="blank">Secret
 
 ## Imagens do projeto
 
-![image](https://user-images.githubusercontent.com/75648386/183256797-b7ffddcd-f868-4c83-8e5f-8d6185f20592.png)
-![image](https://user-images.githubusercontent.com/75648386/183256814-522d9cc0-2515-4009-b402-09745a7e6e5c.png)
-![image](https://user-images.githubusercontent.com/75648386/183256845-63f40f18-ca9a-4fb0-8de8-55bf094bc801.png)
+![image](https://user-images.githubusercontent.com/75648386/195444096-60614271-3827-4886-abcc-2d5e86069fc5.png)
+![image](https://user-images.githubusercontent.com/75648386/195444192-765b3115-3023-4651-98b3-9e9eb036a7c2.png)
+![image](https://user-images.githubusercontent.com/75648386/195444357-f6f4d90f-5995-4485-ab46-272c23d2dec2.png)
 
 <br>
 
